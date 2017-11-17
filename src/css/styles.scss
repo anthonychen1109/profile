@@ -1,0 +1,230 @@
+$border: 1px solid black;
+
+
+// OUTLINE
+.outline {
+  border: $border;
+}
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+// TOP RIGHT
+.top {
+  height: 500px;
+}
+
+.profile, .skills {
+  border: $border;
+  height: 500px;
+  width: 50%;
+}
+
+.display {
+  height: 500px;
+  margin-left: 20px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  width: 70%;
+}
+
+.tab {
+  width: 25%;
+}
+
+.home-tab, .skill-tab, .resume-tab, .git-tab, .proj-tab {
+  border: $border;
+  height: 20%;
+  padding-top: 40%;
+  text-align: center;
+}
+
+div.home-tab:hover {
+  background-color: yellow;
+}
+
+div.skill-tab:hover {
+  background-color: yellow;
+}
+
+div.resume-tab:hover {
+  background-color: yellow;
+}
+
+div.git-tab:hover {
+  background-color: yellow;
+}
+
+div.proj-tab:hover {
+  background-color: yellow;
+}
+
+.skill-set {
+  margin: auto;
+  margin-top: 20px;
+  margin-left: 20px;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
+.skill-box {
+  border: $border;
+  height: 75px;
+  width: 75px;
+  margin-left: 20px;
+}
+
+.skill-image {
+  height: 75px;
+  width: 75px;
+}
+
+.resume img{
+  margin-left: 30px;
+  height: 700px;
+  width: 500px;
+}
+
+.about {
+  margin-left: 15px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.card{
+  margin-top: 5px;
+}
+
+//TOP LEFT
+
+.firstName, .lastName, .experience, .nextLevel {
+  border: $border;
+  margin-left: 10px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.level {
+  border: $border;
+  margin-top: 15px;
+  text-align: center;
+  width: 10%;
+}
+
+.firstName {
+  width: 50%;
+}
+
+.lastName {
+  width: 40%;
+}
+
+.experience {
+  margin-left: 15px;
+  width: 38%;
+}
+
+.nextLevel {
+  margin-left: 15px;
+  width: 42%;
+}
+
+.attr, .attr-value {
+  border: $border;
+  margin-top: 15px;
+  padding-top:5px;
+  text-align: center;
+  width: 20%;
+}
+
+.attr-value {
+  color: blue;
+  font-weight: 700;
+}
+
+.attr-add {
+  background-color: red;
+  border: $border;
+  margin-left: 15px;
+  margin-top: 15px;
+  text-align: center;
+  width: 5%;
+}
+
+.blank-left, .blank-right {
+  margin-top: 20px;
+  width: 50%;
+}
+
+.resistance {
+  margin-top: 5px;
+  height: 5%;
+  width: 80%;
+}
+
+.resistance-value {
+  margin-top: 5px;
+}
+
+// BOT
+
+.orbs {
+  height: 200px;
+  width:20%;
+}
+
+.bot-bar {
+  border: $border;
+  border-radius: 5px;
+  height: 100px;
+  margin-top: 100px;
+  width:60%;
+}
+
+.orb-pic {
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+.skill-pic {
+  border: $border;
+  height: 100px;
+  width: 15%;
+}
+
+.stamina, .potion {
+  width: 35%;
+}
+
+.skill-image {
+  height: 100%;
+  width: 100%;
+}
+
+.stamina-bar {
+  border: $border;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.black {
+  background-color: black;
+  margin-top: 15px;
+  height: 10%;
+}
+
+.yellow {
+  background-color: yellow;
+  margin-top: 15px;
+  height: 30%;
+}
+
+.potion-slot {
+  border: $border;
+  height: 80px;
+  margin-top: 5%;
+  width: 25%;
+}
