@@ -95,8 +95,8 @@ class Skills extends Component {
     let home =
     <Aux>
     <h5>ABOUT ME:</h5>
-      <div class="card">
-          <div class="card-block">
+      <div className="card">
+          <div className="card-block">
             Before transitioning into Software Engineering,
             I received a B.A. in Economics from Baruch College.
             The experience and knowledge was incredible. This experience
@@ -104,8 +104,8 @@ class Skills extends Component {
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-block">
+        <div className="card">
+          <div className="card-block">
             During my time at Queens College studying Computer Science,
             I spent a little over a year and a half as an IT/MIS Administrator
             for Shine Electronics. This position gave a lot of hands on experience
@@ -113,8 +113,8 @@ class Skills extends Component {
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-block">
+        <div className="card">
+          <div className="card-block">
             After graduating from Queens College, I decided it was time to
             pursue my career as a Software Engineer. Python and React JS grabbed my
             attention in particular because of their beauty.
@@ -131,8 +131,8 @@ class Skills extends Component {
           { this.state.selected == null ?
             <div className="about">
               <h5>ABOUT ME:</h5>
-                <div class="card">
-                  <div class="card-block">
+                <div className="card">
+                  <div className="card-block">
                     Before transitioning into Software Engineering,
                     I received a B.A. in Economics from Baruch College.
                     The experience and knowledge was incredible. This experience
@@ -140,8 +140,8 @@ class Skills extends Component {
                   </div>
                 </div>
 
-                <div class="card">
-                  <div class="card-block">
+                <div className="card">
+                  <div className="card-block">
                     During my time at Queens College studying Computer Science,
                     I spent a little over a year and a half as an IT/MIS Administrator
                     for Shine Electronics. This position gave a lot of hands on experience
@@ -149,8 +149,8 @@ class Skills extends Component {
                   </div>
                 </div>
 
-                <div class="card">
-                  <div class="card-block">
+                <div className="card">
+                  <div className="card-block">
                     After graduating from Queens College, I decided it was time to
                     pursue my career as a Software Engineer. Python and React JS grabbed my
                     attention in particular because of their beauty.

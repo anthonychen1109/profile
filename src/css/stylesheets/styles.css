@@ -131,6 +131,13 @@ div.proj-tab:hover {
 .resistance-value {
   margin-top: 5px; }
 
+.stat-points {
+  width: 40%; }
+
+.stat-value h6 {
+  margin-top: 20%;
+  text-align: center; }
+
 .orbs {
   height: 200px;
   width: 20%; }

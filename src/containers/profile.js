@@ -1,25 +1,45 @@
 import React, { Component } from 'react';
 
-//HOC
-import Aux from '../hoc/aux';
-
 class Profile extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      counter: 100
+      str: 95,
+      dex: 100,
+      vit: 90,
+      energy:85,
+      pool: 250
     };
-    this.handleAdd = this.handleAdd.bind(this);
+    this.handleStr = this.handleStr.bind(this);
+    this.handleDex = this.handleDex.bind(this);
+    this.handleVit = this.handleVit.bind(this);
+    this.handleEnergy = this.handleEnergy.bind(this);
   }
 
-  handleAdd() {
-    this.setState({ counter: this.state.counter+1})
+  handleStr() {
+    this.setState({ str: this.state.str+1 })
+    this.setState({ pool: this.state.pool-1 })
+  }
+
+  handleDex() {
+    this.setState({ dex: this.state.dex+1 })
+    this.setState({ pool: this.state.pool-1 })
+  }
+
+  handleVit() {
+    this.setState({ vit: this.state.vit+1 })
+    this.setState({ pool: this.state.pool-1 })
+  }
+
+  handleEnergy() {
+    this.setState({ energy: this.state.energy+1 })
+    this.setState({ pool: this.state.pool-1 })
   }
 
   render() {
     return (
-      <div className="container">
+      <div className="container left-side">
           <div className="row">
             <div className="firstName">
               <h1>Anthony</h1>
@@ -52,10 +72,10 @@ class Profile extends Component {
                 <h6>STRENGTH</h6>
               </div>
               <div className="attr-value">
-                <h6>{this.state.counter}</h6>
+                <h6>{this.state.str}</h6>
               </div>
               <div className="attr-add"
-                onClick={this.handleAdd}
+                onClick={this.handleStr}
                 >
                 +
               </div>
@@ -68,9 +88,11 @@ class Profile extends Component {
                 <h6>DEXTERITY</h6>
               </div>
               <div className="attr-value">
-                <h6>{this.state.counter}</h6>
+                <h6>{this.state.dex}</h6>
               </div>
-              <div className="attr-add">
+              <div className="attr-add"
+                onClick={this.handleDex}
+                >
                 +
               </div>
             </div>
@@ -82,9 +104,11 @@ class Profile extends Component {
                 <h6>VITALITY</h6>
               </div>
               <div className="attr-value">
-                <h6>100</h6>
+                <h6>{this.state.vit}</h6>
               </div>
-              <div className="attr-add">
+              <div className="attr-add"
+                onClick={this.handleVit}
+                >
                 +
               </div>
             </div>
@@ -96,16 +120,27 @@ class Profile extends Component {
                 <h6>ENERGY</h6>
               </div>
               <div className="attr-value">
-                <h6>100</h6>
+                <h6>{this.state.energy}</h6>
               </div>
-              <div className="attr-add">
+              <div className="attr-add"
+                onClick={this.handleEnergy}
+                >
                 +
               </div>
             </div>
           </div>
 
           <div className="container row">
-            <div className="blank-left"></div>
+            <div className="blank-left">
+            <div className="row">
+                <div className="attr resistance stat-points">
+                  <h6>STAT POINTS REMAINING:</h6>
+                </div>
+                <div className="attr-value resistance-value stat-value">
+                  <h6>{this.state.pool}</h6>
+                </div>
+              </div>
+            </div>
             <div className="blank-right">
               <div className="row">
                 <div className="attr resistance">
