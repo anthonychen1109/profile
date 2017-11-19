@@ -126,7 +126,7 @@ class Skills extends Component {
 
   render() {
     return (
-      <div className="row">
+      <div className="row right-side">
         <div className="display">
           { this.state.selected == null ?
             <div className="about">
